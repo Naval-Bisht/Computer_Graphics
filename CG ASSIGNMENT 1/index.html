@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CG Assignment 1 by Naval Kishore Singh Bisht (MT2024099)</title>
+    <link rel="stylesheet" href="css/index.css">
+    
+</head>
+<body>
+    <!-- Heading Row -->
+    
+
+    <!-- Main Content -->
+    <div id="container">
+        <div id="header"><h2>
+        CG ASSIGNMENT 1 BY NAVAL KISHORE SINGH BISHT (MT2024099)</h2>
+    </div>
+    <div id="mainContent">
+
+        <canvas id="glCanvas" width="800" height="600"></canvas>
+
+        <div id="sidebar">
+            <h2>Options</h2>
+            <button id="viewMode" class="active">View Mode</button>
+            <button id="rotateObstacle">Rotate Rectangle</button>
+            <button id="scaleObstacle">Scale Rectangle</button>
+            <button id="moveObstacle">Move Rectangle</button>
+            <button id="moveVertex">Move Vertex</button>
+            <button id="movePerson">Move Person</button>
+            <button id="addPerson">Add Person</button>
+            
+            <h2>Actions Performed</h2>
+            <button id="resetSimulation">Reset Simulation</button>
+           
+            <h2>Population Density</h2>
+            <div class="legend">
+                <div class="color-box" style="background-color: rgba(0,255,0,0.6);"></div> Normal (4 people)
+            </div>
+            <div class="legend">
+                <div class="color-box" style="background-color: rgba(255,0,0,0.6);"></div> Overpopulated
+            </div>
+            <div class="legend">
+                <div class="color-box" style="background-color: rgba(0,0,255,0,0.6);"></div> Underpopulated
+            </div>
+            
+            <h2>Instructions</h2>
+            <ul>
+                <li>Select an Option first</li>
+                <li>Press arrow buttons  to rotate obstacle and scale it.</li>
+                
+            </ul>
+            
+            <div id="status">
+                Status: Simulation ready. Select an Option.
+                <br>Triangles: <span id="triCount">0</span>
+                <br>People: <span id="peopleCount">0</span>
+                <br>Selected: <span id="selectedItem">None</span>
+            </div>
+            <div id="currentMode">Current Mode: View Mode</div>
+        </div>
+            </div>
+
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

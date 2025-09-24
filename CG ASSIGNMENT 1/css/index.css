@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    background-color: #2c3e50;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#mainContent{
+    display: flex;
+    padding-top: 20px; /* space above header */
+            padding-left: 10px;
+            padding-right: 10px;
+            align-content: center;
+            justify-content: center;
+            flex-direction: row;
+}
+#header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding-bottom: 20px; /* space below header */
+            padding-top: 20px; /* space above header */
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 10px; /* space below heading */
+        }
+#glCanvas {
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 800px;
+    height: 600px;
+}
+
+#sidebar {
+    width: 250px;
+    padding: 15px;
+    background-color: #34495e;
+    overflow-y: auto;
+}
+
+h2 {
+    color: #ecf0f1;
+    margin-top: 0;
+    border-bottom: 1px solid #4a6278;
+    padding-bottom: 8px;
+}
+
+button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    background: linear-gradient(to right, #e74c3c, #3498db);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+button.active {
+    box-shadow: 0 0 8px rgba(231, 76, 60, 0.8);
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+#status, #currentMode {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #2c3e50;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#currentMode {
+    font-weight: bold;
+    color: #3498db;
+}
